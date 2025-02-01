@@ -4,14 +4,14 @@ public class Product {
     private double price;
     private int stock;
 
-    // Constructor
+  
     public Product(String name, double price, int stock) {
         this.name = name;
         this.price = price;
         this.stock = stock;
     }
 
-    // Getters y Setters
+    
     public String getName() {
         return name;
     }
@@ -42,14 +42,14 @@ public class Product {
         this.stock = stock;
     }
 
-    // Método para mostrar detalles del producto
+   
     public void showDetails() {
         System.out.println("Producto: " + name);
         System.out.println("Precio: $" + price);
         System.out.println("Stock: " + stock);
     }
 
-    // Método estático que compara dos productos y retorna el más caro
+  
     public static Product comparePrices(Product p1, Product p2) {
         return (p1.getPrice() > p2.getPrice()) ? p1 : p2;
     }

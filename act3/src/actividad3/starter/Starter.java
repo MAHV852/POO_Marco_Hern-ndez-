@@ -15,7 +15,7 @@ public class Starter {
                 System.out.print("Elige una opción: ");
 
                 int option = scanner.nextInt();
-                scanner.nextLine(); // Limpiar buffer
+                scanner.nextLine(); 
 
                 switch (option) {
                     case 1:
@@ -24,11 +24,10 @@ public class Starter {
 
                         System.out.print("Precio del producto: ");
                         double price = scanner.nextDouble();
-                        scanner.nextLine(); // Limpiar buffer
-
+                        scanner.nextLine(); 
                         System.out.print("Stock disponible: ");
                         int stock = scanner.nextInt();
-                        scanner.nextLine(); // Limpiar buffer
+                        scanner.nextLine(); 
 
                         controller.addProduct(new Product(name, price, stock));
                         break;
@@ -63,7 +62,7 @@ public class Starter {
 
             } catch (Exception e) {
                 System.out.println("Error: " + e.getMessage());
-                scanner.nextLine(); // Limpiar buffer
+                scanner.nextLine(); 
             }
         }
     }
